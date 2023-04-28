@@ -1,0 +1,91 @@
+10.	 Write a PHP script to display following pattern
+a.	    *
+      **
+     ***
+b.	 1
+    12
+    123
+    1234
+    12345
+c.          *
+            * *
+           * * *
+            * *
+             *
+
+
+d.         •
+            ••
+           •••
+          ••••
+____________________
+a)
+<?php
+$rows = 3;
+for($i=1; $i<=$rows; $i++){
+  for($j=1; $j<=$rows-$i; $j++){
+    echo "&nbsp;&nbsp;";
+  }
+  for($j=1; $j<=$i; $j++){
+    echo "*";
+  }
+  echo "<br>";
+}
+?>
+____________--
+b)
+<?php
+$rows = 5;
+for($i=1; $i<=$rows; $i++){
+  for($j=1; $j<=$i; $j++){
+    echo $j;
+  }
+  echo "<br>";
+}
+?>
+
+_______________
+c)
+<?php
+$rows = 3;
+for($i=1; $i<=$rows; $i++){
+  for($j=$rows-$i; $j>=1; $j--){
+    echo "&nbsp;&nbsp;";
+  }
+  for($j=1; $j<=$i*2-1; $j++){
+    echo "*";
+    if($j<$i*2-1){
+      echo "&nbsp;";
+    }
+  }
+  echo "<br>";
+}
+for($i=$rows-1; $i>=1; $i--){
+  for($j=$rows-$i; $j>=1; $j--){
+    echo "&nbsp;&nbsp;";
+  }
+  for($j=1; $j<=$i*2-1; $j++){
+    echo "*";
+    if($j<$i*2-1){
+      echo "&nbsp;";
+    }
+  }
+  echo "<br>";
+}
+?>
+d)
+<?php
+$rows = 4;
+for($i=1; $i<=$rows; $i++){
+  for($j=$rows-$i; $j>=1; $j--){
+    echo "&nbsp;&nbsp;";
+  }
+  for($j=1; $j<=$i; $j++){
+    echo "•";
+    if($j<$i){
+      echo "&nbsp;";
+    }
+  }
+  echo "<br>";
+}
+?>

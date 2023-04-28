@@ -1,0 +1,21 @@
+<?php
+$marks = array(
+    array("Name" => "John", "Maths" => 70, "Programming" => 80, "Networking" => 90),
+    array("Name" => "Mary", "Maths" => 85, "Programming" => 75, "Networking" => 80),
+    array("Name" => "David", "Maths" => 75, "Programming" => 90, "Networking" => 85)
+);
+
+echo "<table border='1'>";
+echo "<tr><th>Name</th><th>Maths</th><th>Programming</th><th>Networking</th></tr>";
+
+foreach ($marks as $student) {
+    echo "<tr>";
+    echo "<td>".$student['Name']."</td>";
+    echo "<td>".$student['Maths']."</td>";
+    echo "<td>".$student['Programming']."</td>";
+    echo "<td>".$student['Networking']."</td>";
+    echo "</tr>";
+}
+
+echo "</table>";
+?>

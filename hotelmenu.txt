@@ -1,0 +1,20 @@
+<form method="POST" action="place-order.php">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="table">Table number:</label>
+  <input type="number" id="table" name="table" required><br>
+
+  <label for="menu">Menu:</label><br>
+  <input type="checkbox" id="menu1" name="menu[]" value="Item 1">
+  <label for="menu1">Item 1</label><br>
+  <input type="checkbox" id="menu2" name="menu[]" value="Item 2">
+  <label for="menu2">Item 2</label><br>
+  <input type="checkbox" id="menu3" name="menu[]" value="Item 3">
+  <label for="menu3">Item 3</label><br>
+
+  <label for="special-requests">Special requests:</label>
+  <textarea id="special-requests" name="special-requests"></textarea><br>
+
+  <input type="submit" value="Place Order">
+</form>

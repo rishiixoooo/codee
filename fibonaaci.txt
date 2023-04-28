@@ -1,0 +1,16 @@
+<?php
+function fibonacci($n) {
+  $fibonacci_array = array(0, 1); // Initialize array with first two terms
+  for($i = 2; $i < $n; $i++) {
+    $fibonacci_array[$i] = $fibonacci_array[$i-1] + $fibonacci_array[$i-2]; // Calculate the next term by adding the previous two terms
+  }
+  return $fibonacci_array;
+}
+
+// To print the Fibonacci series up to 10 terms
+$terms = 10;
+$result = fibonacci($terms);
+for($i = 0; $i < $terms; $i++) {
+  echo $result[$i] . " ";
+}
+?>

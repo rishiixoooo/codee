@@ -1,0 +1,13 @@
+<?php
+$students = array(
+    array("Class" => "BCA 3rd Year", "Name" => "John", "Roll No" => "101"),
+    array("Class" => "BCA 3rd Year", "Name" => "Maria", "Roll No" => "102"),
+    array("Class" => "BCA 3rd Year", "Name" => "Alex", "Roll No" => "103")
+);
+
+foreach($students as $student){
+    echo "Class: ".$student['Class']."<br>";
+    echo "Name: ".$student['Name']."<br>";
+    echo "Roll No: ".$student['Roll No']."<br><br>";
+}
+?>

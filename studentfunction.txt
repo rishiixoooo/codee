@@ -1,0 +1,9 @@
+<?php
+function find_max_min($num1, $num2, $num3) {
+    $max = max($num1, $num2, $num3);
+    $min = min($num1, $num2, $num3);
+    echo "Maximum: ".$max.", Minimum: ".$min;
+}
+
+find_max_min(10, 20, 30); // Output: Maximum: 30, Minimum: 10
+?>

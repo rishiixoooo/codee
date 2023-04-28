@@ -1,0 +1,21 @@
+<?php
+function isArmstrong($number) {
+    $sum = 0;
+    $num_digits = strlen((string) $number);
+    $temp = $number;
+    while ($temp > 0) {
+        $digit = $temp % 10;
+        $sum += pow($digit, $num_digits);
+        $temp = (int) $temp / 10;
+    }
+    return $number == $sum;
+}
+
+// Testing the function
+$num = 153;
+if (isArmstrong($num)) {
+    echo "$num is an Armstrong number";
+} else {
+    echo "$num is not an Armstrong number";
+}
+?>

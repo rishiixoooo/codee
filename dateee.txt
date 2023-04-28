@@ -1,0 +1,5 @@
+<?php
+$date = "11/04/2023";
+$formatted_date = date("l, j F, Y", strtotime($date));
+echo $formatted_date;
+?>

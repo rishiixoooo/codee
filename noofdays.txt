@@ -1,0 +1,6 @@
+<?php
+$datetime1 = new DateTime('2023-04-28');
+$datetime2 = new DateTime('2023-05-05');
+$interval = $datetime1->diff($datetime2);
+echo "The difference between ".$datetime1->format('Y-m-d')." and ".$datetime2->format('Y-m-d')." is ".$interval->format('%a days');
+?>

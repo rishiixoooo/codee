@@ -1,0 +1,10 @@
+<?php
+$num = 121;
+$rev = strrev($num);
+
+if ($num == $rev) {
+  echo "Palindrome";
+} else {
+  echo "Not a Palindrome";
+}
+?>

@@ -1,0 +1,20 @@
+<?php
+// Open a file for writing
+$myfile = fopen("testfile.txt", "w") or die("Unable to open file!");
+
+// Write some text to the file
+$txt = "Hello, world!";
+fwrite($myfile, $txt);
+
+// Close the file
+fclose($myfile);
+
+// Open the file for reading
+$myfile = fopen("testfile.txt", "r") or die("Unable to open file!");
+
+// Read the contents of the file
+echo fread($myfile,filesize("testfile.txt"));
+
+// Close the file
+fclose($myfile);
+?>

@@ -1,0 +1,19 @@
+a) index array
+<?php
+$fruits = array("Apple", "Banana", "Mango", "Orange");
+print_r($fruits);
+?>
+b)Associcative array
+<?php
+$person = array("Name" => "John", "Age" => 25, "City" => "New York");
+print_r($person);
+?>
+c)multi
+<?php
+$marks = array(
+    array("John", 80, 70, 90),
+    array("Maria", 90, 85, 75),
+    array("Alex", 70, 80, 85)
+);
+print_r($marks);
+?>
